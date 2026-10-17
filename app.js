@@ -18,3 +18,4 @@ document.querySelector("#start").onclick=()=>document.querySelector("#dialog").c
 setTimeout(()=>document.querySelector("#dialog").showModal(),450);
 loadWords();
 const loadAds=()=>{if(loadAds.done)return;loadAds.done=true;const s=document.createElement("script");s.async=true;s.src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3634602303672600";s.crossOrigin="anonymous";document.head.append(s)};window.addEventListener("pointerdown",loadAds,{once:true,passive:true});window.addEventListener("keydown",loadAds,{once:true,passive:true});
+const supportLink=document.createElement("a");supportLink.className="support-link";supportLink.href="https://link.mercadopago.com.br/wita";supportLink.target="_blank";supportLink.rel="noopener noreferrer";supportLink.textContent="APOIAR";document.querySelector("header").append(supportLink);
